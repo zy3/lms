@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.red.lms.dal.mapper.ActionMapper">
+    <resultMap id="BaseResultMap" type="com.red.lms.dal.model.ActionListDTO">
+        <result property="isbn" column="isbn" jdbcType="VARCHAR"/>
+        <result property="bookName" column="bookName" jdbcType="VARCHAR"/>
+        <result property="readerName" column="readerName" jdbcType="VARCHAR"/>
+        <result property="readerType" column="readerType" jdbcType="VARCHAR"/>
+        <result property="gradeClass" column="gradeClass" jdbcType="VARCHAR"/>
+        <result property="studentNum" column="studentNum" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="VARCHAR"/>
+        <result property="borrowTime" column="borrowTime"  javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+        <result property="endTime" column="endTime"  javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+        <result property="backTime" column="backTime" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+        <result property="bookUniqueId" column="bookUniqueId" jdbcType="VARCHAR"/>
+        <result property="readerUniqueId" column="readerUniqueId" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="selectPageByCondition" resultMap="BaseResultMap">
+        SELECT
+        t2.isbn as isbn,
+        t2.name as bookName,
+        t3.name AS readerName,
+        t3.reader_type as readerType,
+        t3.grade_class as gradeClass,
+        t3.student_num as studentNum,
+        t1.status as status,
+        t1.borrow_time as borrowTime,
+        t1.end_time as endTime,
+        t1.back_time as backTime,
+        t2.book_unique_id as bookUniqueId,
+        t3.reader_unique_id  as readerUniqueId
+        FROM action t1, book t2, reader t3 where
+            t1.book_unique_id = t2.book_unique_id
+            AND t1.reader_unique_id = t3.reader_unique_id
+            AND t1.del_flag = 0
+            AND t2.del_flag = 0
+            AND t3.del_flag = 0 ${ew.customSqlSegment}
+    </select>
+</mapper>

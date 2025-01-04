@@ -1,0 +1,1 @@
+import{u as a,_ as t}from"./ReaderForm.vue_vue_type_script_setup_true_lang-BeM2MyCg.js";import{v as o,q as r,H as n,p as d}from"./index-B4LUeTLg.js";import"./common-CBPeEccM.js";import"./book-D9SslOf9.js";const u=o({name:"ReaderAdd",__name:"readerAdd",setup(s){const{initToDetail:e}=a();return e("add"),(p,i)=>(d(),r("div",null,[n(t,{pageType:"add"})]))}});export{u as default};
