@@ -1,5 +1,5 @@
 # lms
-this is a library management system specifically designed for libraries and small and medium-sized schools. if you need it, you can communicate and discuss it
+This is a library management system specifically designed for libraries and small and medium-sized schools. if you need it, you can communicate and discuss it
 
 # Important Note
 Consultation email:
