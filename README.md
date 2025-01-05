@@ -2,6 +2,7 @@
 This is a library management system specifically designed for libraries and small and medium-sized schools. if you need it, you can communicate and discuss it
 
 # Important Note
+You can communicate via email to obtain the demonstration environment
 Consultation email:
 lms.service24hour@gmail.com;lms.service24hour@outlook.com
 
@@ -46,6 +47,10 @@ The system settings support setting borrowing related parameters and default lan
 ### Security Management
 Security management provides functions such as setting security parameters, auditing logs, data backup, and setting super administrator passwords.
 ![Example Image](images/security.gif)
+
+### Book Search
+Book search is used to provide readers with information on the status of books in the library, making it easier for them to search for books.
+![Example Image](images/search.gif)
 
 ### Other
 Additional information on other functions to be added later.
