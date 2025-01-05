@@ -5,6 +5,9 @@ This is a library management system specifically designed for libraries and smal
 Consultation email:
 lms.service24hour@gmail.com;lms.service24hour@outlook.com
 
+## Overall Functionality
+![Example Image](images/group.png)
+
 ## Introduction
 The system includes functions such as login, book management, reader management, borrowing management, statistical reports, employee management, role permissions, system settings, system authorization, and security management
 
