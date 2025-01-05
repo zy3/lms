@@ -2,9 +2,8 @@
 This is a library management system specifically designed for libraries and small and medium-sized schools. if you need it, you can communicate and discuss it
 
 # Important Note
-You can communicate via email to obtain the demonstration environment
-Consultation email:
-lms.service24hour@gmail.com;lms.service24hour@outlook.com
+You can communicate via email to obtain the demonstration environment.
+Consultation email:lms.service24hour@gmail.com;lms.service24hour@outlook.com
 
 ## Overall Functionality
 ![Example Image](images/group.png)
