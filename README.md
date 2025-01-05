@@ -24,6 +24,26 @@ Reader management includes two functions: maintaining reader information and cla
 Borrowing and returning management includes functions such as borrowing and returning queries, borrowing books, returning books, and renewing books. During the borrowing and returning process, electronic barcode scanners can be used to scan books for easy management.
 ![Example Image](images/borrow.gif)
 
+### Report Statistics
+The report statistics include daily borrowing frequency, popular book ranking, and reader borrowing ranking, which can provide a more comprehensive understanding of the library's data situation.
+![Example Image](images/statistics.gif)
+
+### Employee Management
+Employee management provides maintenance of employee information, including enabling deactivation, resetting passwords, resetting secondary verification codes, etc.
+![Example Image](images/employee.gif)
+
+### Role Management
+Role management can provide precise permission maintenance, and role positions that are not accessible in the library can provide various permissions. So that different roles can be selected when adding employees.
+![Example Image](images/role.gif)
+
+### System Setting
+The system settings support setting borrowing related parameters and default language. Currently, the system supports both English and Chinese languages.
+![Example Image](images/system.gif)
+
+### Security Management
+Security management provides functions such as setting security parameters, auditing logs, data backup, and setting super administrator passwords.
+![Example Image](images/security.gif)
+
 ### Other
 Additional information on other functions to be added later.
 
